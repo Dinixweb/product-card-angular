@@ -1,0 +1,29 @@
+.container {
+  row-gap: 10px;
+  column-gap: 10px;
+  width: fit-content !important;
+
+}
+
+.container-fluid {
+  width: fit-content !important;
+  white-space: normal;
+}
+
+@media screen and (max-width:1200px) {
+  .container-fluid {
+    width: fit-content !important;
+    white-space: normal;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+}

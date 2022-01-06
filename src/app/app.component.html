@@ -1,8 +1,12 @@
 <div class="header p-4 bg-warning bg-gradient"></div>
-<div class="container d-flex justify-content-center bg-light">
-  <div class="products">
-    <div class="title">
-      <h1 class="text-secondary">Product Listing</h1>
-    </div>
+<div class="container d-flex justify-content-center p-5 bg-light flex-wrap">
+  <div class="container-fluid d-flex bg-light flex-wrap">
+    <app-card
+      *ngFor="let item of post"
+      [title]="item.title"
+      [imageUrl]="item.imageUrl"
+      [username]="item.username"
+      [content]="item.content"
+    ></app-card>
   </div>
 </div>
